@@ -39,14 +39,14 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
 #define	NET_PROTO_STP		/* Spanning Tree protocol */
 #define	NET_PROTO_LACP		/* Link Aggregation control protocol */
-#define	NET_PROTO_EAPOL		/* EAP over LAN protocol */
+#undef	NET_PROTO_EAPOL		/* EAP over LAN protocol */
 //#define NET_PROTO_LLDP	/* Link Layer Discovery protocol */
 
 /*
  * PXE support
  *
  */
-//#undef	PXE_STACK		/* PXE stack in iPXE - you want this! */
+#undef	PXE_STACK		/* PXE stack in iPXE - you want this! */
 //#undef	PXE_MENU		/* PXE menu booting */
 
 /*
@@ -55,7 +55,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  */
 
 #define	DOWNLOAD_PROTO_TFTP	/* Trivial File Transfer Protocol */
-#define	DOWNLOAD_PROTO_HTTP	/* Hypertext Transfer Protocol */
+#undef	DOWNLOAD_PROTO_HTTP	/* Hypertext Transfer Protocol */
 #undef	DOWNLOAD_PROTO_HTTPS	/* Secure Hypertext Transfer Protocol */
 #undef	DOWNLOAD_PROTO_FTP	/* File Transfer Protocol */
 #undef	DOWNLOAD_PROTO_SLAM	/* Scalable Local Area Multicast */
@@ -67,18 +67,18 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 
-//#undef	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
-//#undef	SANBOOT_PROTO_AOE	/* AoE protocol */
-//#undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
-//#undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
-//#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
+#undef	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
+#undef	SANBOOT_PROTO_AOE	/* AoE protocol */
+#undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
+#undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
+#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
 
 /*
  * HTTP extensions
  *
  */
-#define HTTP_AUTH_BASIC		/* Basic authentication */
-#define HTTP_AUTH_DIGEST	/* Digest authentication */
+#undef HTTP_AUTH_BASIC		/* Basic authentication */
+#undef HTTP_AUTH_DIGEST	/* Digest authentication */
 //#define HTTP_AUTH_NTLM	/* NTLM authentication */
 //#define HTTP_ENC_PEERDIST	/* PeerDist content encoding */
 //#define HTTP_HACK_GCE		/* Google Compute Engine hacks */
@@ -87,9 +87,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * 802.11 cryptosystems and handshaking protocols
  *
  */
-#define	CRYPTO_80211_WEP	/* WEP encryption (deprecated and insecure!) */
-#define	CRYPTO_80211_WPA	/* WPA Personal, authenticating with passphrase */
-#define	CRYPTO_80211_WPA2	/* Add support for stronger WPA cryptography */
+#undef	CRYPTO_80211_WEP	/* WEP encryption (deprecated and insecure!) */
+#undef	CRYPTO_80211_WPA	/* WPA Personal, authenticating with passphrase */
+#undef	CRYPTO_80211_WPA2	/* Add support for stronger WPA cryptography */
 
 /*
  * Name resolution modules
@@ -115,9 +115,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 //#define	IMAGE_EFI		/* EFI image support */
 //#define	IMAGE_SDI		/* SDI image support */
 //#define	IMAGE_PNM		/* PNM image support */
-#define	IMAGE_PNG		/* PNG image support */
-#define	IMAGE_DER		/* DER image support */
-#define	IMAGE_PEM		/* PEM image support */
+#undef	IMAGE_PNG		/* PNG image support */
+#undef	IMAGE_DER		/* DER image support */
+#undef	IMAGE_PEM		/* PEM image support */
 //#define	IMAGE_ZLIB		/* ZLIB image support */
 //#define	IMAGE_GZIP		/* GZIP image support */
 
@@ -129,9 +129,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	NVO_CMD			/* Non-volatile option storage commands */
 #define	CONFIG_CMD		/* Option configuration console */
 #define	IFMGMT_CMD		/* Interface management commands */
-#define	IWMGMT_CMD		/* Wireless interface management commands */
-#define IBMGMT_CMD		/* Infiniband management commands */
-#define FCMGMT_CMD		/* Fibre Channel management commands */
+#undef	IWMGMT_CMD		/* Wireless interface management commands */
+#undef IBMGMT_CMD		/* Infiniband management commands */
+#undef FCMGMT_CMD		/* Fibre Channel management commands */
 #define	ROUTE_CMD		/* Routing table management commands */
 #define IMAGE_CMD		/* Image management commands */
 #define DHCP_CMD		/* DHCP management commands */
@@ -173,7 +173,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * Virtual network devices
  *
  */
-#define VNIC_IPOIB		/* Infiniband IPoIB virtual NICs */
+#undef VNIC_IPOIB		/* Infiniband IPoIB virtual NICs */
 //#define VNIC_XSIGO		/* Infiniband Xsigo virtual NICs */
 
 /*

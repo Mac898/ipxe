@@ -1,0 +1,4 @@
+#!ipxe
+
+dhcp
+chain tftp://10.0.1.65/config/boot.ipxe
