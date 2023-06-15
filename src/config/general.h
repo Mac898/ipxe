@@ -35,19 +35,19 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  */
 
 #define	NET_PROTO_IPV4		/* IPv4 protocol */
-//#define NET_PROTO_IPV6	/* IPv6 protocol */
+#undef NET_PROTO_IPV6	/* IPv6 protocol */
 #undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
 #define	NET_PROTO_STP		/* Spanning Tree protocol */
 #define	NET_PROTO_LACP		/* Link Aggregation control protocol */
 #undef	NET_PROTO_EAPOL		/* EAP over LAN protocol */
-//#define NET_PROTO_LLDP	/* Link Layer Discovery protocol */
+#undef NET_PROTO_LLDP	/* Link Layer Discovery protocol */
 
 /*
  * PXE support
  *
  */
 #undef	PXE_STACK		/* PXE stack in iPXE - you want this! */
-//#undef	PXE_MENU		/* PXE menu booting */
+#define	PXE_MENU		/* PXE menu booting */
 
 /*
  * Download protocols
@@ -59,8 +59,8 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #undef	DOWNLOAD_PROTO_HTTPS	/* Secure Hypertext Transfer Protocol */
 #undef	DOWNLOAD_PROTO_FTP	/* File Transfer Protocol */
 #undef	DOWNLOAD_PROTO_SLAM	/* Scalable Local Area Multicast */
-#undef	DOWNLOAD_PROTO_NFS	/* Network File System Protocol */
-//#undef DOWNLOAD_PROTO_FILE	/* Local filesystem access */
+#define	DOWNLOAD_PROTO_NFS	/* Network File System Protocol */
+#undef DOWNLOAD_PROTO_FILE	/* Local filesystem access */
 
 /*
  * SAN boot protocols
@@ -79,9 +79,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  */
 #undef HTTP_AUTH_BASIC		/* Basic authentication */
 #undef HTTP_AUTH_DIGEST	/* Digest authentication */
-//#define HTTP_AUTH_NTLM	/* NTLM authentication */
-//#define HTTP_ENC_PEERDIST	/* PeerDist content encoding */
-//#define HTTP_HACK_GCE		/* Google Compute Engine hacks */
+#undef HTTP_AUTH_NTLM	/* NTLM authentication */
+#undef HTTP_ENC_PEERDIST	/* PeerDist content encoding */
+#undef HTTP_HACK_GCE		/* Google Compute Engine hacks */
 
 /*
  * 802.11 cryptosystems and handshaking protocols
@@ -105,21 +105,21 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * you want to use.
  *
  */
-//#define	IMAGE_NBI		/* NBI image support */
-//#define	IMAGE_ELF		/* ELF image support */
-//#define	IMAGE_MULTIBOOT		/* MultiBoot image support */
-//#define	IMAGE_PXE		/* PXE image support */
-//#define	IMAGE_SCRIPT		/* iPXE script image support */
-//#define	IMAGE_BZIMAGE		/* Linux bzImage image support */
-//#define	IMAGE_COMBOOT		/* SYSLINUX COMBOOT image support */
-//#define	IMAGE_EFI		/* EFI image support */
-//#define	IMAGE_SDI		/* SDI image support */
-//#define	IMAGE_PNM		/* PNM image support */
+#undef	IMAGE_NBI		/* NBI image support */
+#undef	IMAGE_ELF		/* ELF image support */
+#undef	IMAGE_MULTIBOOT		/* MultiBoot image support */
+#define	IMAGE_PXE		/* PXE image support */
+#define	IMAGE_SCRIPT		/* iPXE script image support */
+#define	IMAGE_BZIMAGE		/* Linux bzImage image support */
+#undef	IMAGE_COMBOOT		/* SYSLINUX COMBOOT image support */
+#define	IMAGE_EFI		/* EFI image support */
+#define	IMAGE_SDI		/* SDI image support */
+#undef	IMAGE_PNM		/* PNM image support */
 #undef	IMAGE_PNG		/* PNG image support */
 #undef	IMAGE_DER		/* DER image support */
 #undef	IMAGE_PEM		/* PEM image support */
-//#define	IMAGE_ZLIB		/* ZLIB image support */
-//#define	IMAGE_GZIP		/* GZIP image support */
+#undef	IMAGE_ZLIB		/* ZLIB image support */
+#undef	IMAGE_GZIP		/* GZIP image support */
 
 /*
  * Command-line commands to include
@@ -135,7 +135,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	ROUTE_CMD		/* Routing table management commands */
 #define IMAGE_CMD		/* Image management commands */
 #define DHCP_CMD		/* DHCP management commands */
-#define SANBOOT_CMD		/* SAN boot commands */
+#undef SANBOOT_CMD		/* SAN boot commands */
 #define MENU_CMD		/* Menu commands */
 #define LOGIN_CMD		/* Login command */
 #define SYNC_CMD		/* Sync command */
