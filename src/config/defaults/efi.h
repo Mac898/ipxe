@@ -17,7 +17,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define TIMER_EFI
 #define UMALLOC_EFI
 #define SMBIOS_EFI
-#define SANBOOT_EFI
+//#define SANBOOT_EFI
 #define BOFM_EFI
 #define ENTROPY_EFITICK
 #define ENTROPY_EFIRNG
@@ -26,7 +26,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define ACPI_EFI
 #define FDT_EFI
 
-#undef	NET_PROTO_IPV6		/* IPv6 protocol */
+//#undef	NET_PROTO_IPV6		/* IPv6 protocol */
 #define	NET_PROTO_LLDP		/* Link Layer Discovery protocol */
 
 #define DOWNLOAD_PROTO_FILE	/* Local filesystem access */
@@ -34,11 +34,11 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	IMAGE_EFI		/* EFI image support */
 #define	IMAGE_SCRIPT		/* iPXE script image support */
 
-#undef	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
-#undef	SANBOOT_PROTO_AOE	/* AoE protocol */
-#undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
-#undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
-#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
+//#undef	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
+//#undef	SANBOOT_PROTO_AOE	/* AoE protocol */
+//#undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
+//#undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
+//#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
 
 #define	USB_HCD_XHCI		/* xHCI USB host controller */
 #define	USB_HCD_EHCI		/* EHCI USB host controller */

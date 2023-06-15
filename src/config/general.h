@@ -36,17 +36,17 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 
 #define	NET_PROTO_IPV4		/* IPv4 protocol */
 //#define NET_PROTO_IPV6	/* IPv6 protocol */
-#undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
+//#undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
 #define	NET_PROTO_STP		/* Spanning Tree protocol */
 #define	NET_PROTO_LACP		/* Link Aggregation control protocol */
-#undef	NET_PROTO_EAPOL		/* EAP over LAN protocol */
+//#undef	NET_PROTO_EAPOL		/* EAP over LAN protocol */
 //#define NET_PROTO_LLDP	/* Link Layer Discovery protocol */
 
 /*
  * PXE support
  *
  */
-#undef	PXE_STACK		/* PXE stack in iPXE - you want this! */
+//#undef	PXE_STACK		/* PXE stack in iPXE - you want this! */
 //#undef	PXE_MENU		/* PXE menu booting */
 
 /*
@@ -55,11 +55,11 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  */
 
 #define	DOWNLOAD_PROTO_TFTP	/* Trivial File Transfer Protocol */
-#undef	DOWNLOAD_PROTO_HTTP	/* Hypertext Transfer Protocol */
-#undef	DOWNLOAD_PROTO_HTTPS	/* Secure Hypertext Transfer Protocol */
-#undef	DOWNLOAD_PROTO_FTP	/* File Transfer Protocol */
-#undef	DOWNLOAD_PROTO_SLAM	/* Scalable Local Area Multicast */
-#undef	DOWNLOAD_PROTO_NFS	/* Network File System Protocol */
+//#undef	DOWNLOAD_PROTO_HTTP	/* Hypertext Transfer Protocol */
+//#undef	DOWNLOAD_PROTO_HTTPS	/* Secure Hypertext Transfer Protocol */
+//#undef	DOWNLOAD_PROTO_FTP	/* File Transfer Protocol */
+//#undef	DOWNLOAD_PROTO_SLAM	/* Scalable Local Area Multicast */
+#define	DOWNLOAD_PROTO_NFS	/* Network File System Protocol */
 //#undef DOWNLOAD_PROTO_FILE	/* Local filesystem access */
 
 /*
@@ -67,18 +67,18 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 
-#undef	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
-#undef	SANBOOT_PROTO_AOE	/* AoE protocol */
-#undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
-#undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
-#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
+//#undef	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
+//#undef	SANBOOT_PROTO_AOE	/* AoE protocol */
+//#undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
+//#undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
+//#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
 
 /*
  * HTTP extensions
  *
  */
-#undef HTTP_AUTH_BASIC		/* Basic authentication */
-#undef HTTP_AUTH_DIGEST	/* Digest authentication */
+//#undef HTTP_AUTH_BASIC		/* Basic authentication */
+//#undef HTTP_AUTH_DIGEST	/* Digest authentication */
 //#define HTTP_AUTH_NTLM	/* NTLM authentication */
 //#define HTTP_ENC_PEERDIST	/* PeerDist content encoding */
 //#define HTTP_HACK_GCE		/* Google Compute Engine hacks */
@@ -87,9 +87,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * 802.11 cryptosystems and handshaking protocols
  *
  */
-#undef	CRYPTO_80211_WEP	/* WEP encryption (deprecated and insecure!) */
-#undef	CRYPTO_80211_WPA	/* WPA Personal, authenticating with passphrase */
-#undef	CRYPTO_80211_WPA2	/* Add support for stronger WPA cryptography */
+//#undef	CRYPTO_80211_WEP	/* WEP encryption (deprecated and insecure!) */
+//#undef	CRYPTO_80211_WPA	/* WPA Personal, authenticating with passphrase */
+//#undef	CRYPTO_80211_WPA2	/* Add support for stronger WPA cryptography */
 
 /*
  * Name resolution modules
@@ -115,9 +115,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 //#define	IMAGE_EFI		/* EFI image support */
 //#define	IMAGE_SDI		/* SDI image support */
 //#define	IMAGE_PNM		/* PNM image support */
-#undef	IMAGE_PNG		/* PNG image support */
-#undef	IMAGE_DER		/* DER image support */
-#undef	IMAGE_PEM		/* PEM image support */
+//#undef	IMAGE_PNG		/* PNG image support */
+//#undef	IMAGE_DER		/* DER image support */
+//#undef	IMAGE_PEM		/* PEM image support */
 //#define	IMAGE_ZLIB		/* ZLIB image support */
 //#define	IMAGE_GZIP		/* GZIP image support */
 
@@ -129,13 +129,13 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	NVO_CMD			/* Non-volatile option storage commands */
 #define	CONFIG_CMD		/* Option configuration console */
 #define	IFMGMT_CMD		/* Interface management commands */
-#undef	IWMGMT_CMD		/* Wireless interface management commands */
-#undef IBMGMT_CMD		/* Infiniband management commands */
-#undef FCMGMT_CMD		/* Fibre Channel management commands */
+//#undef	IWMGMT_CMD		/* Wireless interface management commands */
+//#undef IBMGMT_CMD		/* Infiniband management commands */
+//#undef FCMGMT_CMD		/* Fibre Channel management commands */
 #define	ROUTE_CMD		/* Routing table management commands */
 #define IMAGE_CMD		/* Image management commands */
 #define DHCP_CMD		/* DHCP management commands */
-#define SANBOOT_CMD		/* SAN boot commands */
+//#define SANBOOT_CMD		/* SAN boot commands */
 #define MENU_CMD		/* Menu commands */
 #define LOGIN_CMD		/* Login command */
 #define SYNC_CMD		/* Sync command */
@@ -166,21 +166,21 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * ROM-specific options
  *
  */
-#undef	NONPNP_HOOK_INT19	/* Hook INT19 on non-PnP BIOSes */
+//#undef	NONPNP_HOOK_INT19	/* Hook INT19 on non-PnP BIOSes */
 #define	AUTOBOOT_ROM_FILTER	/* Autoboot only devices matching our ROM */
 
 /*
  * Virtual network devices
  *
  */
-#undef VNIC_IPOIB		/* Infiniband IPoIB virtual NICs */
+//#undef VNIC_IPOIB		/* Infiniband IPoIB virtual NICs */
 //#define VNIC_XSIGO		/* Infiniband Xsigo virtual NICs */
 
 /*
  * Error message tables to include
  *
  */
-#undef	ERRMSG_80211		/* All 802.11 error descriptions (~3.3kb) */
+//#undef	ERRMSG_80211		/* All 802.11 error descriptions (~3.3kb) */
 
 /*
  * Obscure configuration options
@@ -189,15 +189,15 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 
-#undef	BUILD_SERIAL		/* Include an automatic build serial
+//#undef	BUILD_SERIAL		/* Include an automatic build serial
 				 * number.  Add "bs" to the list of
 				 * make targets.  For example:
 				 * "make bin/rtl8139.dsk bs" */
-#undef	BUILD_ID		/* Include a custom build ID string,
+//#undef	BUILD_ID		/* Include a custom build ID string,
 				 * e.g "test-foo" */
-#undef	NULL_TRAP		/* Attempt to catch NULL function calls */
-#undef	GDBSERIAL		/* Remote GDB debugging over serial */
-#undef	GDBUDP			/* Remote GDB debugging over UDP
+//#undef	NULL_TRAP		/* Attempt to catch NULL function calls */
+//#undef	GDBSERIAL		/* Remote GDB debugging over serial */
+//#undef	GDBUDP			/* Remote GDB debugging over UDP
 				 * (both may be set) */
 //#define EFI_DOWNGRADE_UX	/* Downgrade UEFI user experience */
 #define	TIVOLI_VMM_WORKAROUND	/* Work around the Tivoli VMM's garbling of SSE
