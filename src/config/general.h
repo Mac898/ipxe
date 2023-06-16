@@ -47,7 +47,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 #undef	PXE_STACK		/* PXE stack in iPXE - you want this! */
-#define	PXE_MENU		/* PXE menu booting */
+//#define	PXE_MENU		/* PXE menu booting */
 
 /*
  * Download protocols
