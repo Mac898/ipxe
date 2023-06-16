@@ -189,12 +189,8 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 
-#undef	BUILD_SERIAL		/* Include an automatic build serial
-				 * number.  Add "bs" to the list of
-				 * make targets.  For example:
-				 * "make bin/rtl8139.dsk bs" */
-#undef	BUILD_ID		/* Include a custom build ID string,
-				 * e.g "test-foo" */
+#undef	BUILD_SERIAL
+#undef	BUILD_ID
 #undef	NULL_TRAP		/* Attempt to catch NULL function calls */
 #undef	GDBSERIAL		/* Remote GDB debugging over serial */
 #undef	GDBUDP			/* Remote GDB debugging over UDP
