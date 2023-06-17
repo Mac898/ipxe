@@ -119,7 +119,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #undef	IMAGE_DER		/* DER image support */
 #undef	IMAGE_PEM		/* PEM image support */
 #undef	IMAGE_ZLIB		/* ZLIB image support */
-#undef	IMAGE_GZIP		/* GZIP image support */
+#define	IMAGE_GZIP		/* GZIP image support */
 
 /*
  * Command-line commands to include
