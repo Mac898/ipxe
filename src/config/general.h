@@ -106,9 +106,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 #undef	IMAGE_NBI		/* NBI image support */
-#define	IMAGE_ELF		/* ELF image support */
+#undef	IMAGE_ELF		/* ELF image support */
 #undef	IMAGE_MULTIBOOT		/* MultiBoot image support */
-#define	IMAGE_PXE		/* PXE image support */
+#undef	IMAGE_PXE		/* PXE image support */
 //#undef	IMAGE_SCRIPT		/* iPXE script image support */
 #undef	IMAGE_BZIMAGE		/* Linux bzImage image support */
 #undef	IMAGE_COMBOOT		/* SYSLINUX COMBOOT image support */
